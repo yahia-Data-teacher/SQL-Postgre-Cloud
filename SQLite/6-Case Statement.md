@@ -117,18 +117,17 @@ FROM (
     SELECT year, month,
     SUM(precipitation) as tornado_precipitation
     FROM station_data
-    WHERE tornado = 1
+    WHERE tornado =1
     AND year >= 1990
     GROUP BY year, month
 ) t
 
 INNER JOIN
 
-(
-    SELECT year, month,
+(   SELECT year, month,
     SUM(precipitation) as non_tornado_precipitation
     FROM station_data
-    WHERE tornado = 0
+    WHERE tornado =0
     AND year >= 1990
     GROUP BY year, month
 ) non_t
