@@ -87,7 +87,7 @@ GROUP BY year, month
 SELECT year, month,
 SUM(precipitation) as non_tornado_precipitation
 FROM station_data
-WHERE tornado = 0
+WHERE tornado =0
 AND year >= 1990
 GROUP BY year, month
 ```
