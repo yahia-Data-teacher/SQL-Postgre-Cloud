@@ -1,3 +1,12 @@
+# Dans cette partie nous allons travailler avec la base de données :  rexon_metals.db
+
+- ### Sélectionner la base de donnée  rexon_metals.db sur BDHub.io .
+
+- ### Double cliquer sur rexon_metals.db 
+
+![a](https://user-images.githubusercontent.com/78825764/213727063-7b9f18d9-f159-4962-b1cb-c596a115594a.jpg)
+
+- ### Go to visualise
 # JOIN
 
 ### 6.1A INNER JOIN
