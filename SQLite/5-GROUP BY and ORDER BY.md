@@ -135,17 +135,7 @@ GROUP BY year
 HAVING total_precipitation > 30
 ```
 
-Note that some platforms like Oracle do not support aliasing in GROUP BY and HAVING.
 
-Therefore you have to rewrite the entire expression each time
-
-```sql
-SELECT year,
-SUM(precipitation) as total_precipitation
-FROM station_data
-GROUP BY year
-HAVING SUM(precipitation) > 30
-```
 
 
 ### 4.14 Getting Distinct values
