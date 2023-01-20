@@ -1,4 +1,4 @@
-# 4.Récupérer Les Données
+# Récupérer Les Données
 
 ![Capture_schema_postgresql_workshop](https://user-images.githubusercontent.com/73080397/212012695-c77b9361-fc08-48bc-8766-65a50367eab0.PNG)
 
