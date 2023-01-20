@@ -55,19 +55,17 @@ GROUP BY wind_severity;
 Also, some wind_speed values are NULL, so without an `ELSE` any records that do not meet a condition will turn out to be NULL. 
 
 ```sql 
-SELECT
+SELECT 
 
 CASE
-    WHEN wind_speed >= 40 THEN 'HIGH'
-    WHEN wind_speed >= 30 THEN 'MODERATE'
-    WHEN wind_speed >= 0 THEN 'LOW'
+   WHEN wind_speed >= 40 THEN 'HIGH'
+   WHEN wind_speed >= 30 THEN 'MODERATE'
+   WHEN wind_speed >= 0 THEN 'LOW'
+ 
 END AS wind_severity,
-
-COUNT(*) AS record_count
-
+COUNT(*)  AS record_count
 FROM station_data
-
-GROUP BY wind_severity
+GROUP BY wind_severity;
 ```
 
 ### 5.4 "Zero/Null" Case Trick
